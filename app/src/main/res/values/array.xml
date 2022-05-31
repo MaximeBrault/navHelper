@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="icons_array">
+        <item>icone</item>
+        <item>maison</item>
+        <item>restaurant</item>
+        <item>bar</item>
+        <item>boulangerie</item>
+        <item>boucherie</item>
+        <item>magasin</item>
+        <item>coiffeur</item>
+        <item>medical</item>
+        <item>maritime</item>
+        <item>sportif</item>
+        <item>art</item>
+        <item>technique</item>
+        <item>ami</item>
+    </string-array>
+</resources>

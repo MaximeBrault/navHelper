@@ -1,0 +1,165 @@
+<resources>
+    <!-- URL et token d'accès -->
+    <string name="access_token" translatable="false">pk.eyJ1IjoiY2hhaXJlbWFkIiwiYSI6ImNqbGY0ZDg3MDA1Znoza253eGV1M3ZvM3YifQ.8I7SyNUapFhuOkDR9qLrbg</string>
+    <string name="mapsURL">www.google.com/maps/search/?api=1&amp;query=</string>
+
+    <!-- Informations application / Variables / Message d'accueil -->
+    <string name="app_nam">Nav0Limite</string>
+    <string name="action_settings">Settings</string>
+    <string name="arrival">Arrivée:</string>
+    <string name="distance">Distance:</string>
+    <string name="time">Time:</string>
+    <string name="home_start">Démarrer</string>
+    <string name="pictureNameDateFormat">yyyy-MM-dd-HH-mm-ss</string>
+    <string name="sharedPreferencesKey">nameKey</string>
+    <string name="DestinationPreferencesNameWithoutCity">destinations_</string>
+    <string name="cityPreferencesName">City</string>
+    <string name="DestinationHomeToNav">DestinationChoosed</string>
+    <string name="useMapPreferencesName">UseMap</string>
+    <string name="pedestrianPreferencesName">pedestrianPref</string>
+    <string name="bikePreferencesName">bikePref</string>
+    <string name="carPreferencesName">carPref</string>
+    <string name="busPreferencesName">busPref</string>
+    <string name="favoriteTypePreferencesName">favoriteTypePref</string>
+    <string name="profilePreferencesName">Profile</string>
+    <string name="numberPreferencesName">Number</string>
+    <string name="checkpointsPreferencesName">Checkpoints</string>
+    <string name="nextStepDistanceRemainTextFormat">Dans %s</string>
+    <string name="metterFormat">%d m</string>
+    <string name="passwordAcc">passwordAcc</string>
+    <string name="phoneNumber">phoneNumber</string>
+
+    <!-- Speech -->
+        <string name="offRouteSpeech">Vous êtes hors du chemin, suivez la flèche et reprenez la route.</string>
+
+    <!-- Messages des TOASTs -->
+        <!-- Vérifications paramètres -->
+        <string name="passwordAccNeeded">Vous devez renseigner un mot de passe Accompagnateur</string>
+        <string name="phoneNumberNeeded">Vous devez renseigner un numéro de téléphone</string>
+        <string name="correctRayonNeeded">Rayon invalide ! (min : 0, max : 1000)</string>
+        <string name="rayonNeeded">Vous devez renseigner le rayon maximal de déplacement (en Km)</string>
+        <string name="deplacementTypeNeeded">Merci de sélectionner au moins un des moyens de déplacement</string>
+        <!-- Ajout de destination -->
+        <string name="validerActualPos">Merci de récupérer votre position actuelle pour ajouter le lieu</string>
+        <string name="validerDestSearch">Vous devez choisir une adresse avant de valider</string>
+        <string name="validerImgSearch">Vous devez choisir un icône ou sélectionner une image pour valider</string>
+        <string name="validerImgDest">Vous devez choisir un icône ou prendre une photo pour valider</string>
+        <string name="validerNameSearch">Vous devez avoir entré un nom de destination pour valider</string>
+        <string name="validerSurnameSearch">Vous devez avoir entré un surnom de destination pour valider</string>
+        <string name="validerPrononciationSearch">Vous devez avoir entré une prononciation de destination pour valider</string>
+        <!-- Gestion des destinations -->
+        <string name="anyDestSelect">Aucune destination sélectionnée</string>
+        <!-- Modification des destinations -->
+        <string name="fillEverything">Remplissez tous les champs pour valider</string>
+        <string name="maxLengthModifDest">Le nom de votre destination ne peut excéder 30 caractères</string>
+        <string name="validerNewNickname">Vous devez avoir entré un nouveau nom de destination pour valider</string>
+        <string name="validerNewPrononciation">Vous devez avoir entré une prononciation de destination pour valider</string>
+        <!-- Ajout de checkpoint -->
+        <string name="validationAjoutCheckpoint">Étape ajoutée avec succès !</string>
+        <string name="validerAjoutCheckpoint">Vous devez avoir entré un nom et une prononciation pour cette étape</string>
+        <!-- Gestion des checkpoints -->
+        <string name="oneCheckpointNeeded">Vous devez avoir placé au moins une étape</string>
+        <!-- Actions caméras -->
+        <string name="pictureTaken">Photo prise avec succès</string>
+        <string name="cameraCancel">Action annulée</string>
+        <string name="cameraError">Erreur</string>
+        <!-- Sélection destination -->
+        <string name="destinationAlreadySelected">Destination déjà sélectionné</string>
+        <!-- Liste des checkpoints -->
+        <string name="zeroCheckpointToDisplay">Vous devez avoir ajouté au moins une étape</string>
+        <!-- Problème de sensors -->
+        <string name="sensorProblem">[ERREUR] Problème de capteurs, merci de relancer l\'application</string>
+        <!-- Problème de position -->
+        <string name="posError">[ERROR] Position introuvable</string>
+        <!-- Vérification numéro téléphone -->
+        <string name="enterPhoneFromParam">Veuillez renseigner un numéro de téléphone dans vos paramètres</string>
+
+
+    <!-- Contenus des SMS -->
+    <string name="sosString">[GPS ADAPEI] JE SUIS PERDU ! Mes coordonnées (latitude,longitude) sont : </string>
+    <string name="lostPasswordString">[GPS ADAPEI] RÉCUPÉRATION DU MOT DE PASSE ACCOMPAGNATEUR : </string>
+
+    <!-- Contenus des layouts -->
+        <!-- Global -->
+        <string name="xml_valider">VALIDER</string>
+        <string name="xml_annuler">ANNULER</string>
+        <string name="xml_ajouter">AJOUTER</string>
+        <string name="xml_back">RETOUR</string>
+        <string name="xml_yes">Oui</string>
+        <string name="xml_no">Non</string>
+        <string name="xml_ok">OK</string>
+        <string name="xml_stop">STOP</string>
+        <string name="xml_photo">PHOTO</string>
+        <string name="xml_hintNomDestination">Nom de la destination</string>
+        <string name="xml_hintPronunciation">Prononciation vocale</string>
+        <string name="xml_nulltext">nullText</string>
+        <!-- activity_add.xml -->
+        <string name="xml_addDest_Title">NOUVELLE DESTINATION</string>
+        <string name="xml_addDest_Recherche">RECHERCHER</string>
+        <string name="xml_addDest_Ajout">AJOUTER</string>
+        <string name="xml_addDest_NewEtape">NOUVELLE ÉTAPE</string>
+        <!-- activity_arrow_nav_checkpoint_add_view.xml -->
+        <string name="xml_addCheckpoint_Title">NOUVELLE ÉTAPE</string>
+        <string name="xml_addCheckpoint_retakePicture">REPRENDRE LA PHOTO</string>
+        <string name="xml_addCheckpoint_hintName">Nom de l\'étape</string>
+        <!-- activity_arrow_nav_checkpoint_management_view.xml -->
+        <string name="xml_manageCheckpoint_Title">ÉTAPES</string>
+        <!-- activity_arrow_nav_view -->
+        <string name="xml_arrowView_repeate">RÉPÉTER L\'INSTRUCTION</string>
+        <!-- activity_destination_creation_view.xml -->
+        <string name="xml_destinationCreation_Title">AJOUTER</string>
+        <string name="xml_destinationCreation_PosGet">RÉCUPÉRER MA POSITION ACTUELLE</string>
+        <!-- activity_home_view.xml -->
+        <string name="xml_home_Start">DÉMARRER</string>
+        <!-- activity_map_view -->
+        <string name="xml_map_Start">DÉMARRER LA NAVIGATION</string>
+        <!-- activity_parameters_view.xml -->
+        <string name="xml_param_Title">PARAMÈTRES</string>
+        <string name="xml_param_DisplayMap">\ Affichage de la carte</string>
+        <string name="xml_param_Foyer">\ Foyer</string>
+        <string name="xml_param_Lorient">Lorient</string>
+        <string name="xml_param_Auray">Auray</string>
+        <string name="xml_param_Profil">\ Profil</string>
+        <string name="xml_param_User">Utilisateur</string>
+        <string name="xml_param_Accompagnateur">Accompagnateur</string>
+        <string name="xml_param_Displayer">\ Affichage</string>
+        <string name="xml_param_twoCol">2 Colonnes</string>
+        <string name="xml_param_threeCol">3 Colonnes</string>
+        <string name="xml_param_Locomotion">\ Type de locomotion</string>
+        <string name="xml_param_pedest">Piéton</string>
+        <string name="xml_param_bike">Vélo</string>
+        <string name="xml_param_car">Voiture</string>
+        <string name="xml_param_bus">Bus</string>
+        <string name="xml_param_Rayon">\ Rayon de recherche (km)</string>
+        <string name="xml_param_hintRayon">Nombre de km</string>
+        <string name="xml_param_UrgPhone">\ Numéro d\'urgence</string>
+        <string name="xml_param_Password">\ Mot de passe Accompagnateur</string>
+        <string name="xml_param_hintPassword">Mot de passe de sécurité</string>
+        <!-- activity_search_view.xml -->
+        <string name="xml_searchCreation_Title">RECHERCHER</string>
+        <string name="xml_searchCreation_hintSearch">Adresse de la destination</string>
+        <!-- alert_dialog_modification.xml -->
+        <string name="xml_modifDest_Title">MODIFICATION</string>
+        <string name="xml_modifDest_newName">Nouveau nom</string>
+        <string name="xml_modifDest_ModifOf">Modification de : </string>
+        <!-- checkpoint_edit_dialog.xml -->
+        <string name="xml_editCheckpoint_Title">MISE À JOUR</string>
+        <string name="xml_editCheckpoint_hintCheckpointNewName">Nouveau nom d\'étape</string>
+        <!-- delete_checkpoint_confirm.xml -->
+        <string name="xml_confirmDeleteCheckpoint_Title">SUPPRIMER L\'ÉTAPE</string>
+        <string name="xml_confirmDeleteCheckpoint_Confirm">Confirmez-vous la suppression de l\'étape sélectionnée ?</string>
+        <!-- delete_dialog.xml -->
+        <string name="xml_delete_Title">SUPPRIMER</string>
+        <!-- ok_dialog.xml -->
+        <string name="xml_okDialog_Title">MAIN</string>
+        <!-- parameter_dialog.xml -->
+        <string name="xml_paramDialog_hintPhone">Numéro de téléphone</string>
+        <string name="xml_paramDialog_hintPhoneName">Nom associé</string>
+        <!-- password_confirm.xml -->
+        <string name="xml_passwordConfirm_TextViewDestinataire">Confirmez-vous l\'envoi du mot de passe à l\'accompagnateur</string>
+        <string name="xml_passwordConfirm_Title">MOT DE PASSE OUBLIÉ ?</string>
+        <!-- password_dialog.xml -->
+        <string name="xml_passwordDialog_Title">MOT DE PASSE</string>
+        <string name="xml_passwordDialog_Demand">Le mot de passe accompagnateur est nécessaire</string>
+        <string name="xml_passworddialog_hintPassword">Mot de passe accompagnateur</string>
+</resources>

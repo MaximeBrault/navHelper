@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".activity.ParametersView">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="@string/xml_param_Title"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="30dp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="@string/xml_param_DisplayMap"
+                    android:textColor="@android:color/white"
+                    android:textSize="20dp"
+                    android:drawableLeft="@drawable/ic_baseline_map_24">
+
+                </TextView>
+
+                <RadioGroup
+                    android:id="@+id/displayMapRadioGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+
+                    <RadioButton
+                        android:id="@+id/yesRadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:padding="10dp"
+                        android:button="@android:color/transparent"
+                        android:background="@drawable/radio_selector"
+                        android:tag="yes"
+                        android:text="@string/xml_yes"/>
+
+                    <RadioButton
+                        android:id="@+id/noRadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:padding="10dp"
+                        android:button="@android:color/transparent"
+                        android:background="@drawable/radio_selector"
+                        android:tag="no"
+                        android:text="@string/xml_no"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="@string/xml_param_Foyer"
+                    android:textColor="@android:color/white"
+                    android:textSize="20dp"
+                    android:drawableLeft="@drawable/ic_baseline_home_24">
+
+                </TextView>
+
+                <RadioGroup
+                    android:id="@+id/foyerRadioGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+
+                    <RadioButton
+                        android:id="@+id/lorientRadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tag="Lorient"
+                        android:text="@string/xml_param_Lorient"
+                        android:textColor="@android:color/white"
+                        android:padding="10dp"
+                        android:button="@android:color/transparent"
+                        android:background="@drawable/radio_selector"/>
+
+                    <RadioButton
+                        android:id="@+id/aurayRadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_selector"
+                        android:button="@android:color/transparent"
+                        android:padding="10dp"
+                        android:tag="Auray"
+                        android:text="@string/xml_param_Auray"
+                        android:textColor="@android:color/white" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="@string/xml_param_Profil"
+                    android:textColor="@android:color/white"
+                    android:textSize="20dp"
+                    android:drawableLeft="@drawable/ic_baseline_person_24">
+
+                </TextView>
+
+                <RadioGroup
+                    android:id="@+id/profileRadioGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+
+                    <RadioButton
+                        android:id="@+id/userRadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textColor="@android:color/white"
+                        android:tag="user"
+                        android:text="@string/xml_param_User"
+                        android:padding="10dp"
+                        android:button="@android:color/transparent"
+                        android:background="@drawable/radio_selector"/>
+
+                    <RadioButton
+                        android:id="@+id/guideRadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:tag="guide"
+                        android:text="@string/xml_param_Accompagnateur"
+                        android:padding="10dp"
+                        android:button="@android:color/transparent"
+                        android:background="@drawable/radio_selector"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="@string/xml_param_Displayer"
+                    android:textColor="@android:color/white"
+                    android:textSize="20dp"
+                    android:drawableLeft="@drawable/ic_baseline_view_column_24">
+
+                </TextView>
+
+                <RadioGroup
+                    android:id="@+id/affichageRadioGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+
+                    <RadioButton
+                        android:id="@+id/radioButton_2col"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:tag="2"
+                        android:text="@string/xml_param_twoCol"
+                        android:textColor="@android:color/white"
+                        android:padding="10dp"
+                        android:button="@android:color/transparent"
+                        android:background="@drawable/radio_selector"/>
+
+                    <RadioButton
+                        android:id="@+id/radioButton_3col"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:tag="3"
+                        android:text="@string/xml_param_threeCol"
+                        android:textColor="@android:color/white"
+                        android:padding="10dp"
+                        android:button="@android:color/transparent"
+                        android:background="@drawable/radio_selector"/>
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="@string/xml_param_Locomotion"
+                    android:textColor="@android:color/white"
+                    android:textSize="20dp"
+                    android:drawableLeft="@drawable/ic_baseline_directions_transit_24">
+
+                </TextView>
+
+                <LinearLayout
+                    android:id="@+id/locomotionCheckBoxGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+
+                    <CheckBox
+                        android:id="@+id/pedestrianCheckBoxButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:tag="pedestrian"
+                        android:text="@string/xml_param_pedest"
+                        android:padding="10dp"
+                        android:button="@android:color/transparent"
+                        android:background="@drawable/radio_selector"/>
+
+                    <CheckBox
+                        android:id="@+id/bikeCheckBoxButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:tag="bike"
+                        android:text="@string/xml_param_bike"
+                        android:padding="10dp"
+                        android:button="@android:color/transparent"
+                        android:background="@drawable/radio_selector"/>
+
+                    <CheckBox
+                        android:id="@+id/carCheckBoxButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:tag="car"
+                        android:text="@string/xml_param_car"
+                        android:padding="10dp"
+                        android:background="@drawable/radio_selector"
+                        android:button="@android:color/transparent"/>
+
+                    <CheckBox
+                        android:id="@+id/busCheckBoxButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:tag="bus"
+                        android:text="@string/xml_param_bus"
+                        android:padding="10dp"
+                        android:background="@drawable/radio_selector"
+                        android:button="@android:color/transparent"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="@string/xml_param_Rayon"
+                    android:textColor="@android:color/white"
+                    android:textSize="20dp"
+                    android:drawableLeft="@drawable/ic_baseline_location_searching_24">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/radiusArea"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:padding="13dp"
+                    android:background="@drawable/item_bg"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:hint="@string/xml_param_hintRayon"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="@string/xml_param_UrgPhone"
+                    android:textColor="@android:color/white"
+                    android:textSize="20dp"
+                    android:drawableLeft="@drawable/ic_baseline_contact_phone_24">
+
+                </TextView>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="5dp">
+
+
+                    <Spinner
+                        android:id="@+id/selectNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginEnd="32dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/item_bg"/>
+
+                    <Button
+                        android:id="@+id/deleteNumButton"
+                        android:background="@drawable/round_shape"
+                        android:backgroundTint="@color/colorRedArrow"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginStart="-50dp"
+                        android:layout_gravity="end"
+                        android:text="X"
+                        android:textStyle="bold"
+                        android:textColor="@color/mapboxWhite"
+                        android:layout_weight="0"
+                        android:foreground="?android:attr/selectableItemBackground"/>
+
+                    <Button
+                        android:id="@+id/addNumberButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:layout_marginEnd="32dp"
+                        android:layout_marginStart="5dp"
+                        android:background="@drawable/item_bg"
+                        android:backgroundTint="@color/greenADAPEI"
+                        android:text="+"
+                        android:textSize="20dp"
+                        android:textColor="@color/mapboxWhite"
+                        android:foreground="?android:attr/selectableItemBackground"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="@string/xml_param_Password"
+                        android:textColor="@android:color/white"
+                        android:textSize="20dp"
+                        android:drawableLeft="@drawable/ic_baseline_password_24">
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/passwordEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginEnd="32dp"
+                        android:padding="13dp"
+                        android:background="@drawable/item_bg"
+                        android:inputType="textPassword"
+                        android:hint="@string/xml_param_hintPassword"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp">
+
+                <Button
+                    android:id="@+id/abortButton"
+                    android:onClick="abortButtonClicked"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/item_bg"
+                    android:backgroundTint="@color/greenADAPEI"
+                    android:text="@string/xml_annuler"
+                    android:textColor="@color/mapboxWhite"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="5dp"
+                    android:foreground="?android:attr/selectableItemBackground"/>
+
+                <Button
+                    android:id="@+id/validateButton"
+                    android:onClick="validateButtonClicked"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:layout_weight="0.5"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/item_bg"
+                    android:backgroundTint="@color/greenADAPEI"
+                    android:text="@string/xml_valider"
+                    android:textColor="@color/mapboxWhite"
+                    android:textStyle="bold"
+                    android:layout_marginStart="5dp"
+                    android:foreground="?android:attr/selectableItemBackground"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

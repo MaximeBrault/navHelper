@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#212121</color>
+    <color name="colorPrimaryDark">#191919</color>
+    <color name="colorAccent">#B1DE00</color>
+    <color name="colorAccentPressed">#85A600</color>
+    <color name="colorDestinationSelected">#00DDFF</color>
+    <color name="colorDestination">#D6D7D7</color>
+    <color name="mapboxWhite">#ffffff</color>
+    <color name="mapboxGray">#636363</color>
+    <color name="mapboxBlue">#4264FB</color>
+    <color name="mapboxGrayLight">#c6d2e1</color>
+    <color name="mapboxPink">#ee4e8b</color>
+    <color name="mapboxYellow">#d9d838</color>
+    <color name="mapboxRed">#b43b71</color>
+    <color name="checkpointNear">#FFFF00</color>
+    <color name="colorGreenArrow">#5CC40B</color>
+    <color name="colorRedArrow">#C91502</color>
+    <color name="greenADAPEI">#7bb33a</color>
+    <color name="greenOffButtonADAPEI">#A65C852C</color>
+    <color name="whiteOffButton">#606060</color>
+    <color name="pinkADAPEI">#fd6c9e</color>
+    <color name="blueEdit">#1f75cb</color>
+</resources>

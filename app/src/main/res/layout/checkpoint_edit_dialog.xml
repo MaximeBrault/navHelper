@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/round_dialog">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/xml_editCheckpoint_Title"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/checkpoint_edit_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/checkpointsPreferencesName"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/inputCPName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:padding="13dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:background="@drawable/item_bg"
+        android:maxLength="30"
+        android:inputType="text"
+        android:hint="@string/xml_editCheckpoint_hintCheckpointNewName"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp">
+
+        <EditText
+            android:id="@+id/inputPrononcName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_weight="1"
+            android:background="@drawable/maneuvre_left_bg"
+            android:ems="10"
+            android:hint="@string/xml_hintPronunciation"
+            android:inputType="text"
+            android:padding="13dp" />
+
+        <ImageButton
+            android:id="@+id/listenCheckpointButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="3"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/maneuvre_right_bg"
+            android:backgroundTint="@color/pinkADAPEI"
+            android:src="@drawable/ic_baseline_volume_up_24"
+            android:foreground="?android:attr/selectableItemBackground"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginBottom="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp">
+
+        <Button
+            android:id="@+id/cpModifRetour"
+            android:layout_weight="0.5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_bg"
+            android:backgroundTint="@color/greenADAPEI"
+            android:text="@string/xml_annuler"
+            android:textColor="@color/mapboxWhite"
+            android:textStyle="bold"
+            android:layout_marginEnd="5dp"
+            android:foreground="?android:attr/selectableItemBackground"/>
+
+        <Button
+            android:id="@+id/cpModifValider"
+            android:layout_weight="0.5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_bg"
+            android:backgroundTint="@color/greenADAPEI"
+            android:text="@string/xml_valider"
+            android:textColor="@color/mapboxWhite"
+            android:textStyle="bold"
+            android:layout_marginStart="5dp"
+            android:foreground="?android:attr/selectableItemBackground"/>
+    </LinearLayout>
+</LinearLayout>

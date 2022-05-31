@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".activity.ArrowNavCheckpointManagementView">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="@string/xml_manageCheckpoint_Title"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="30dp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <android.support.v7.widget.SearchView
+                android:id="@+id/searchCheckpoint"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:showAsAction="ifRoom|collapseActionView"
+                android:background="@drawable/item_bg"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="16dp">
+
+                <ImageButton
+
+                    android:id="@+id/editButton"
+                    android:onClick="editButtonClicked"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="56dp"
+                    android:background="@drawable/maneuvre_left_bg"
+                    android:backgroundTint="@color/blueEdit"
+                    app:srcCompat="@drawable/ic_baseline_edit_24"
+                    android:foreground="?android:attr/selectableItemBackground"/>
+
+                <ImageButton
+                    android:id="@+id/deleteButton"
+                    android:onClick="deleteButtonClicked"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/maneuvre_right_bg"
+                    android:backgroundTint="@color/colorRedArrow"
+                    app:srcCompat="@drawable/ic_baseline_delete_24"
+                    android:foreground="?android:attr/selectableItemBackground"/>
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:scrollIndicators="bottom"
+                android:id="@+id/recyclerView">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp">
+
+                <Button
+                    android:id="@+id/abortButton"
+                    android:onClick="abortButtonClicked"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/item_bg"
+                    android:backgroundTint="@color/greenADAPEI"
+                    android:text="@string/xml_annuler"
+                    android:textColor="@color/mapboxWhite"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="5dp"
+                    android:foreground="?android:attr/selectableItemBackground"/>
+
+                <Button
+                    android:id="@+id/validateButton"
+                    android:onClick="validateButtonClicked"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/item_bg"
+                    android:backgroundTint="@color/greenADAPEI"
+                    android:text="@string/xml_valider"
+                    android:textColor="@color/mapboxWhite"
+                    android:textStyle="bold"
+                    android:layout_marginStart="5dp"
+                    android:foreground="?android:attr/selectableItemBackground"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

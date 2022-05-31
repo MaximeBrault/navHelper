@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.navigation.MapNavView">
+
+
+    <com.mapbox.mapboxsdk.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        mapbox:mapbox_cameraTargetLat="38.9098"
+        mapbox:mapbox_cameraTargetLng="-77.0295"
+        mapbox:mapbox_cameraZoom="12"
+        mapbox:mapbox_styleUrl="mapbox://styles/mapbox/streets-v10" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:padding="15dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="5"
+            android:background="@drawable/item_bg"
+            android:backgroundTint="@color/colorRedArrow"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:onClick="abortButtonClicked"
+            android:padding="10dp"
+            android:text="@string/xml_stop"
+            android:textColor="@color/mapboxWhite"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_weight="2"
+            android:background="@drawable/item_bg"
+            android:backgroundTint="@color/greenADAPEI"
+            android:enabled="false"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:padding="10dp"
+            android:text="@string/xml_map_Start"
+            android:textColor="@color/mapboxWhite"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</RelativeLayout>

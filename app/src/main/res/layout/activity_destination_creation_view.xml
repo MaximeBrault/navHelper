@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".activity.DestinationCreationView">
+
+
+
+    <TextView
+        android:id="@+id/ajouterTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="@string/xml_destinationCreation_Title"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="30dp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/coordoneeButton"
+                android:onClick="posButtonClicked"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_bg"
+                android:backgroundTint="@color/greenADAPEI"
+                android:text="@string/xml_destinationCreation_PosGet"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:padding="16dp"
+                android:textColor="@color/mapboxWhite"
+                android:textStyle="bold"
+                android:foreground="?android:attr/selectableItemBackground"/>
+
+            <TextView
+                android:id="@+id/coordoneeTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/mapboxWhite"
+                android:textAlignment="center">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/destinationNameInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="64dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/item_bg"
+                android:hint="@string/xml_hintNomDestination"
+                android:imeOptions="actionDone"
+                android:maxLength="30"
+                android:padding="13dp"
+                android:singleLine="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+
+                <EditText
+                    android:id="@+id/prononciationInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="32dp"
+                    android:padding="13dp"
+                    android:background="@drawable/maneuvre_left_bg"
+                    android:hint="@string/xml_hintPronunciation"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true"/>
+
+                <ImageButton
+                    android:id="@+id/listenButton"
+                    android:onClick="listenButtonClicked"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="3"
+                    android:layout_marginEnd="32dp"
+                    android:background="@drawable/maneuvre_right_bg"
+                    android:backgroundTint="@color/pinkADAPEI"
+                    android:src="@drawable/ic_baseline_volume_up_24"
+                    android:foreground="?android:attr/selectableItemBackground"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginTop="16dp">
+
+                <Button
+                    android:id="@+id/photoButton"
+                    android:onClick="cameraButtonClicked"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/item_bg"
+                    android:backgroundTint="@color/greenADAPEI"
+                    android:text="@string/xml_photo"
+                    android:layout_marginEnd="16dp"
+                    android:textColor="@color/mapboxWhite"
+                    android:textStyle="bold"
+                    android:foreground="?android:attr/selectableItemBackground"/>
+
+                <Spinner
+                    android:id="@+id/iconsSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight="1"
+                    android:entries="@array/icons_array"
+                    android:textAlignment="center"
+                    android:background="@drawable/item_bg"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageDestination"
+                android:layout_width="wrap_content"
+                android:layout_height="125dp"
+                android:layout_marginTop="32dp"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:drawableStart="@drawable/alert_progress_drawable"
+                android:drawableEnd="@drawable/alert_progress_drawable"
+                android:drawableBottom="@drawable/alert_progress_drawable"
+                android:scaleType="fitXY"
+                android:background="@drawable/item_bg"
+                android:backgroundTint="@color/colorPrimary"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="16dp">
+
+                <Button
+                    android:id="@+id/abortButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/item_bg"
+                    android:backgroundTint="@color/greenADAPEI"
+                    android:onClick="abortButtonClicked"
+                    android:text="@string/xml_annuler"
+                    android:textColor="@color/mapboxWhite"
+                    android:textStyle="bold"
+                    android:foreground="?android:attr/selectableItemBackground"/>
+
+                <Button
+                    android:id="@+id/validateButton"
+                    android:onClick="validateButtonClicked"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/item_bg"
+                    android:backgroundTint="@color/greenADAPEI"
+                    android:text="@string/xml_ajouter"
+                    android:textColor="@color/mapboxWhite"
+                    android:textStyle="bold"
+                    android:layout_marginStart="5dp"
+                    android:foreground="?android:attr/selectableItemBackground"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

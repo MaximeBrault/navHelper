@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/round_dialog">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/xml_ajouter"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/inputNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:padding="13dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:background="@drawable/item_bg"
+        android:inputType="phone"
+        android:hint="@string/xml_paramDialog_hintPhone"/>
+
+    <EditText
+        android:id="@+id/inputName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:padding="13dp"
+        android:background="@drawable/item_bg"
+        android:inputType="text"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:maxLength="30"
+        android:hint="@string/xml_paramDialog_hintPhoneName"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginBottom="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp">
+
+        <Button
+            android:id="@+id/parameterRetour"
+            android:layout_weight="0.5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_bg"
+            android:backgroundTint="@color/greenADAPEI"
+            android:text="@string/xml_annuler"
+            android:textColor="@color/mapboxWhite"
+            android:textStyle="bold"
+            android:layout_marginEnd="5dp"
+            android:foreground="?android:attr/selectableItemBackground"/>
+
+        <Button
+            android:id="@+id/parameterValider"
+            android:layout_weight="0.5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_bg"
+            android:backgroundTint="@color/greenADAPEI"
+            android:text="@string/xml_valider"
+            android:textColor="@color/mapboxWhite"
+            android:textStyle="bold"
+            android:layout_marginStart="5dp"
+            android:foreground="?android:attr/selectableItemBackground"/>
+    </LinearLayout>
+</LinearLayout>

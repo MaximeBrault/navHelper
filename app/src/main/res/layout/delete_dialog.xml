@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/round_dialog">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/xml_delete_Title"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/deleteTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/xml_nulltext"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_margin="32dp">
+
+        <Button
+            android:id="@+id/deleteNon"
+            android:layout_weight="0.5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_bg"
+            android:backgroundTint="@color/greenADAPEI"
+            android:text="@string/xml_annuler"
+            android:textColor="@color/mapboxWhite"
+            android:textStyle="bold"
+            android:layout_marginEnd="5dp"
+            android:foreground="?android:attr/selectableItemBackground"/>
+
+        <Button
+            android:id="@+id/deleteOui"
+            android:layout_weight="0.5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_bg"
+            android:backgroundTint="@color/greenADAPEI"
+            android:text="@string/xml_yes"
+            android:textColor="@color/mapboxWhite"
+            android:textStyle="bold"
+            android:layout_marginStart="5dp"
+            android:foreground="?android:attr/selectableItemBackground"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.adapei.navhelper">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logoapplication"
+        android:label="@string/app_nam"
+        android:roundIcon="@mipmap/ic_launcher_real_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:label">
+        <activity android:name=".activity.LoadView"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.ArrowNavCheckpointAddView"></activity>
+        <activity android:name=".activity.ArrowNavCheckpointManagementView" />
+        <activity
+            android:name=".geocode.GeocodeActivity"
+            android:configChanges="locale"
+            android:label="@string/app_nam"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/AppTheme.NoActionBar" /> <!-- Geocode Activity -->
+        <activity
+            android:name=".display.DisplayActivity"
+            android:configChanges="locale"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/AppTheme.NoActionBar" />  <!-- Display (HUD) Activity -->
+        <activity android:name=".geocode.CustomActivity" /> <!-- android:screenOrientation="landscape" -->
+        <activity android:name=".geocode.ParamActivity" /> <!-- Custom destination Activity -->
+        <activity
+            android:name=".display.NavigationActivity"
+            android:theme="@style/AppTheme.NoActionBar" /> <!-- Parameters Activity -->
+        <activity android:name=".activity.DestinationCreationView" /> <!-- Navigation Activity -->
+        <activity android:name=".activity.AddView" />
+        <activity android:name=".activity.ParametersView" />
+        <activity android:name=".activity.SearchView" />
+        <activity
+            android:name=".activity.navigation.ArrowNavView"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity android:name=".activity.navigation.MapNavView" />
+        <activity android:name=".activity.navigation.NavView"/>
+        <activity android:name=".activity.HomeView"></activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAVdaKCgKm7CmS8_vVfsEWZJwhhg1rGLSg" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <!-- ressource file to create -->
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature android:name="android.hardware.screen.portrait" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+</manifest>

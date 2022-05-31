@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="DURATION_ILLEGAL_ARGUMENT">Duration must be greater than zero.</string>
+</resources>

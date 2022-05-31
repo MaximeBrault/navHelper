@@ -1,0 +1,98 @@
+apply plugin: 'com.android.application'
+apply plugin: 'de.mannodermaus.android-junit5'
+//sk.eyJ1IjoiamFjb2I4IiwiYSI6ImNqeDY2dWlweDA4cW4zeXF6dWQzZHFjcmoifQ.vF2cJevUJfbXIq3q5ehCFA
+
+
+android {
+    compileSdkVersion 32
+    defaultConfig {
+        applicationId "com.adapei.navhelper"
+        minSdkVersion 22
+        targetSdkVersion 32
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    testOptions {
+        unitTests.returnDefaultValues = true
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    dependencies {
+
+        implementation 'com.google.dagger:dagger:2.0'
+        annotationProcessor 'com.google.dagger:dagger-compiler:2.0'
+        /*implementation "com.mapbox.vision:mapbox-android-vision:0.4.0"
+        implementation "com.mapbox.vision:mapbox-android-vision-ar:0.4.0"
+        implementation "com.mapbox.vision:mapbox-android-vision-safety:0.4.0"*/
+    }
+
+    // Support
+    implementation 'com.android.support:appcompat-v7:27.0.2'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.1'
+    implementation 'com.android.support:design:27.0.2'
+
+    // Google Play Services
+    implementation 'com.google.android.gms:play-services-places:15.0.1' // OLD
+    implementation 'com.google.android.gms:play-services-location:15.0.1' // OLD
+    implementation 'com.google.android.libraries.places:places-compat:1.1.0' // NEW
+    implementation 'com.google.android.gms:play-services-places:16.0.0' // NEW
+
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
+
+    implementation 'com.android.support:support-v4:27.1.1'
+
+    // Mapbox Navigation SDK
+        implementation 'com.jakewharton:butterknife:8.8.1'
+        annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+}
+
+repositories {
+    mavenCentral()
+    maven { url 'https://mapbox.bintray.com/mapbox' }
+}
+
+dependencies {
+
+
+    implementation 'org.jgrapht:jgrapht-core:1.5.1'
+    implementation('com.mapbox.mapboxsdk:mapbox-android-sdk:6.2.1@aar') {
+        transitive = true
+    }
+    implementation 'com.mapbox.mapboxsdk:mapbox-android-navigation:0.15.0'
+    implementation('com.mapbox.mapboxsdk:mapbox-android-navigation-ui:0.15.0') {
+        transitive = true
+    }
+    implementation 'com.google.code.gson:gson:2.8.6'
+
+    // Mapbox geocoder dependencies
+    implementation('com.mapbox.mapboxsdk:mapbox-android-geocoder:1.0.0@aar'){
+        transitive=true
+    }
+
+
+
+    // Test
+    testImplementation 'org.mockito:mockito-core:2.0.5-beta'
+    testImplementation "org.junit.jupiter:junit-jupiter-api:5.3.2"
+    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:5.3.2"
+    testImplementation "org.junit.jupiter:junit-jupiter-params:5.3.2"
+
+
+}

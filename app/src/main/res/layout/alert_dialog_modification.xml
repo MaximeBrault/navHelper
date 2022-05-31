@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+android:background="@drawable/round_dialog">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:text="@string/xml_modifDest_Title"
+    android:textAlignment="center"
+    android:textColor="@android:color/white"
+    android:textSize="25sp"
+    android:textStyle="bold"/>
+
+<TextView
+    android:id="@+id/edit_state"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:text="@string/xml_modifDest_ModifOf"
+    android:textAlignment="center"
+    android:textColor="@android:color/white"
+    android:textSize="18sp"/>
+
+<EditText
+    android:id="@+id/userInputNickname"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="32dp"
+    android:layout_marginEnd="32dp"
+    android:padding="13dp"
+    android:background="@drawable/item_bg"
+    android:imeOptions="actionDone"
+    android:hint="@string/xml_modifDest_newName"
+    android:maxLength="30"
+    android:singleLine="true" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="8dp">
+
+    <EditText
+        android:id="@+id/userInputPronunciation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_weight="1"
+        android:background="@drawable/maneuvre_left_bg"
+        android:ems="10"
+        android:hint="@string/xml_hintPronunciation"
+        android:inputType="text"
+        android:padding="13dp" />
+
+    <ImageButton
+        android:id="@+id/buttonListen"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="3"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/maneuvre_right_bg"
+        android:backgroundTint="@color/pinkADAPEI"
+        android:src="@drawable/ic_baseline_volume_up_24"
+        android:foreground="?android:attr/selectableItemBackground"/>
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_marginTop="16dp"
+    android:layout_marginStart="32dp"
+    android:layout_marginEnd="32dp"
+    android:layout_marginBottom="16dp">
+
+    <Button
+        android:id="@+id/editRetour"
+        android:layout_weight="0.5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_bg"
+        android:backgroundTint="@color/greenADAPEI"
+        android:text="@string/xml_annuler"
+        android:textColor="@color/mapboxWhite"
+        android:textStyle="bold"
+        android:layout_marginEnd="5dp"
+        android:foreground="?android:attr/selectableItemBackground"/>
+
+    <Button
+        android:id="@+id/buttonValidate"
+        android:layout_weight="0.5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_bg"
+        android:backgroundTint="@color/greenADAPEI"
+        android:text="@string/xml_valider"
+        android:textColor="@color/mapboxWhite"
+        android:textStyle="bold"
+        android:layout_marginStart="5dp"
+        android:foreground="?android:attr/selectableItemBackground"/>
+</LinearLayout>
+
+</LinearLayout>

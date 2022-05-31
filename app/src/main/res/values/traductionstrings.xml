@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Nav0Limite</string>
+
+    <string name="PLACE_LOCATION_EXTRA">PLACE_LOCATION_EXTRA</string>
+
+    <!--
+        STEP MANEUVRER MODIFIER
+    -->
+    <string name="STEP_MANEUVER_MODIFIER_UTURN">uturn</string>
+    <string name="STEP_MANEUVER_MODIFIER_SHARP_RIGHT">sharp right</string>
+    <string name="STEP_MANEUVER_MODIFIER_RIGHT">right</string>
+    <string name="STEP_MANEUVER_MODIFIER_SLIGHT_RIGHT">slight right</string>
+    <string name="STEP_MANEUVER_MODIFIER_STRAIGHT">straight</string>
+    <string name="STEP_MANEUVER_MODIFIER_SLIGHT_LEFT">slight left</string>
+    <string name="STEP_MANEUVER_MODIFIER_LEFT">left</string>
+    <string name="STEP_MANEUVER_MODIFIER_SHARP_LEFT">sharp left</string>
+
+    <string name="DAYS">days</string>
+    <string name="HOUR">hr</string>
+    <string name="MINUTE">min</string>
+    <string name="SECONDS">seconds</string>
+    <string name="MILES">mi</string>
+    <string name="KM">km</string>
+    
+</resources>

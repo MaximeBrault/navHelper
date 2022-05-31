@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".activity.HomeView"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_weight="1">
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/addDestinationButton"
+                android:onClick="addButtonClicked"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:tint="@color/mapboxWhite"
+                app:backgroundTint="@color/greenADAPEI"
+                app:srcCompat="@drawable/ic_baseline_add_24"
+                android:layout_marginLeft="32dp"
+                android:foreground="?android:attr/selectableItemBackground"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textColor="@color/mapboxWhite"
+                android:textSize="23sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|right"
+            android:layout_weight="1">
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/parameterButton"
+                android:onClick="parameterButtonClicked"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:tint="@color/mapboxWhite"
+                app:backgroundTint="@color/greenADAPEI"
+                app:srcCompat="@drawable/ic_baseline_settings_24"
+                android:layout_marginRight="32dp"
+                android:foreground="?android:attr/selectableItemBackground"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/checkpointButton"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/greenADAPEI"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:onClick="checkpointsFolderButtonClicked"
+            android:src="@drawable/ic_baseline_edit_location_24"
+            app:borderWidth="0dp"/>
+
+        <GridView
+            android:id="@+id/grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:horizontalSpacing="5dp"
+            android:numColumns="2"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="10dp">
+
+        </GridView>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/colorPrimary">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/adminLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/editDestinationButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="16dp"
+                    android:layout_weight="0.2"
+                    android:backgroundTint="@color/blueEdit"
+                    android:onClick="editDestinationButtonClicked"
+                    android:src="@drawable/ic_baseline_edit_24"
+                    app:borderWidth="0dp"
+                    android:foreground="?android:attr/selectableItemBackground"/>
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/deleteDestinationButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="0.2"
+                    android:backgroundTint="@android:color/holo_red_dark"
+                    android:onClick="deleteDestinationButtonClicked"
+                    android:src="@drawable/ic_baseline_delete_24"
+                    app:borderWidth="0dp"
+                    android:foreground="?android:attr/selectableItemBackground"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/homeStartButton"
+                android:onClick="homeStartButtonClicked"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:background="@drawable/item_bg"
+                android:backgroundTint="@color/greenADAPEI"
+                android:text="@string/xml_home_Start"
+                android:textColor="@color/mapboxWhite"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:foreground="?android:attr/selectableItemBackground"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+
+</LinearLayout>
